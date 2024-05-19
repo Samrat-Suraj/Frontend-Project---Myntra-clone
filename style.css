@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body{
+    background-color: rgb(251, 248, 248);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-bar img{
+    height: 50px;
+    width: 53px;
+}
+
+.nav-bar .search{
+    background-color: rgb(247, 245, 245);
+    width: 400px;
+    border-radius: 4px;
+}
+.nav-bar .search i{
+    background-color: rgb(247, 245, 245);
+    padding: 1rem;
+}
+
+.nav-bar .search input::placeholder{
+    font-size: 0.9rem;
+}
+.nav-bar .search input{
+    font-family: inherit;
+    padding: 0.4rem;
+    outline: none;
+    border: none;
+    width: 350px;
+    background-color: rgb(247, 245, 245);
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line i{
+    display: block;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+/* .studio a{
+    position: relative;
+} */
+
+.studio p{
+    font-size: .6rem;
+    position: absolute;
+    top: 20px;
+    color: rgb(250, 104, 104);
+}
+
+
+.nav-bar-links{
+    display: none;
+    display: flex;
+    position: fixed;
+    top: 4.8rem;
+    left: 6rem;
+    background-color: white;
+    width: 85%;
+    transform: translateY(-200%);
+    font-family: inherit;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    letter-spacing: .4px;
+    
+}
+.menunderline{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 1.4rem;
+    color: rgb(218, 28, 60);
+}
+.linksvisable{
+    transform: translateY(0%);
+}
+
+
+.nav-bar-links-two{
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+    line-height: 1.7rem;
+    background-color:white;
+    width: 250px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-bar-links-one{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    line-height: 1.7rem;
+    background-color:white;
+    width: 250px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-bar-links-one a,
+.nav-bar-links-two a{
+    margin-left: 2rem;
+}
+.nav-bar-links-one p,
+.nav-bar-links-two p{
+    margin-left: 2rem;
+}
+
+.nav-bar-links-two{
+    background-color:rgb(246, 244, 244);
+}
+
+
+/* -----------hero-page-------------- */
+
+.hero_page{
+    margin-top: 7.6rem;
+}
+
+.hero_page img{
+    height: 280px;
+    width: 100%;
+}
+
+.headings h4{
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    margin-left: 0.8rem;
+}
+
+/* -----------------Cards------------- */
+
+.card1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card1 img{
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ----smcard-------------------- */
+
+.sm-card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 180px;
+}
+
+.sm-card img{
+    width: 150px;
+    margin-left: 2rem;
+}
+
+
+.overlay{
+    opacity: 1;
+}
+.overlay:hover{
+    opacity: .7;
+}
+
+
+/* -------------footers---------- */
+
+.foo-containers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    background-color: rgb(231, 231, 231);
+    /* height: 800px; */
+    padding: 2rem;
+}
+
+.foo-containers .one{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    width: 20%;
+    height: 100%;
+}
+.foo-containers .two{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    width: 20%;
+    height: 100%;
+}
+.foo-containers .three{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    width: 20%;
+    height: 100%;
+    background-color: pink;
+}
+.foo-containers .four{
+    display: flex;
+    font-size: 0.5rem;
+    flex-direction: column;
+    line-height: 2rem;
+    width: 20%;
+    height: 100%;
+    background-color: olivedrab;
+}
+
+.poplures{
+    background-color: rgb(231, 231, 231);
+    padding: 3rem;
+}
+
+.poplures .poplures-text{
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    letter-spacing: 1.2px;
+}
+
+.contact{
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(231, 231, 231); 
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    letter-spacing: 1.2px;
+}
+
+.address{
+    background-color: rgb(231, 231, 231);
+    padding: 3rem;
+    display: flex;
+    height: 300px;
+}
+
+.address .address-name{
+    width: 50%;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    letter-spacing: 1.2px;
+}
+
+.address .number{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5rem;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    /* letter-spacing: 1.2px; */
+}
